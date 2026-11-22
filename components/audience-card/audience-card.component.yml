@@ -1,0 +1,43 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Audience Card
+status: stable
+group: Marketing/Card
+description: A responsive resource card for an event audience.
+libraryOverrides:
+  dependencies:
+    - sdc_canvas/global
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Card title
+      examples:
+        - I'm a Maker
+    description:
+      type: string
+      title: Description
+      examples:
+        - Grow your brand and reach new markets.
+    link_label:
+      type: string
+      title: Link label
+      examples:
+        - See resources
+    link_url:
+      type: string
+      title: Link URL
+      examples:
+        - '#'
+    image_url:
+      type: string
+      title: Card image
+      examples:
+        - /modules/custom/sdc_canvas/assets/images/maker.png
+    icon_url:
+      type: string
+      title: Card icon
+      examples:
+        - /modules/custom/sdc_canvas/assets/icons/icon-maker.png

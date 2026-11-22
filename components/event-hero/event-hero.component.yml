@@ -1,0 +1,63 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Event Hero
+status: stable
+group: Marketing/Hero
+description: Configurable event hero with copy, metadata, actions, and media.
+libraryOverrides:
+  dependencies:
+    - sdc_canvas/global
+props:
+  type: object
+  required:
+    - title
+  properties:
+    eyebrow:
+      type: string
+      title: Eyebrow
+      examples:
+        - People. Products. A brighter food future.
+    title:
+      type: string
+      title: Event title
+      examples:
+        - "Winter\nFancyFaire* 2028"
+    description:
+      type: string
+      title: Description
+      examples:
+        - "Join the specialty food community to kick off 2027 in one of the world's greatest food cities: San Francisco. Elevate your trade show experience with onsite sampling, unstructured networking, and local immersion."
+    date_label:
+      type: string
+      title: Date label
+      examples:
+        - January 17–19, 2027
+    location_label:
+      type: string
+      title: Location label
+      examples:
+        - "Moscone Center\nSan Francisco, CA"
+    primary_action_label:
+      type: string
+      title: Primary action label
+      examples:
+        - Explore the Event
+    primary_action_url:
+      type: string
+      title: Primary action URL
+      examples:
+        - '#'
+    secondary_action_label:
+      type: string
+      title: Secondary action label
+      examples:
+        - Register to Attend
+    secondary_action_url:
+      type: string
+      title: Secondary action URL
+      examples:
+        - '#'
+    media_url:
+      type: string
+      title: Hero image
+      examples:
+        - /modules/custom/sdc_canvas/assets/images/home-hero-food.png

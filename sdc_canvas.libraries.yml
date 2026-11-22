@@ -1,0 +1,18 @@
+fonts:
+  css:
+    theme:
+      https://use.typekit.net/fdh3suu.css:
+        type: external
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css:
+        type: external
+
+global:
+  css:
+    theme:
+      components/shared.css: {}
+      components/event-hero/event-hero.css: {}
+      components/audience-card/audience-card.css: {}
+      components/audience-grid/audience-grid.css: {}
+  dependencies:
+    - core/drupal
+    - sdc_canvas/fonts

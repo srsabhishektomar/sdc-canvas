@@ -1,0 +1,116 @@
+@import '../shared.css';
+
+.event-hero {
+  display: grid;
+  grid-template-columns: 46.4% 53.6%;
+  min-height: 420px;
+  background: #fff;
+  font-family: var(--sdc-heading);
+}
+
+.event-hero__copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 63px 32px 38px clamp(48px, 10.7vw, 206px);
+}
+
+.event-hero__eyebrow {
+  margin: 0 0 14px;
+  color: #3d4649;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.event-hero__title {
+  margin: 0;
+  max-width: 500px;
+  font-family: var(--sdc-display);
+  font-size: clamp(44px, 3.05vw, 58px);
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  line-height: 0.98;
+}
+
+.event-hero__description {
+  margin: 14px 0 20px;
+  max-width: 430px;
+  font-size: 13.5px;
+  line-height: 1.38;
+}
+
+.event-hero__meta {
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+  margin: 0 0 22px;
+}
+
+.event-hero__meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.event-hero__meta-item i {
+  margin-top: 1px;
+  color: var(--sdc-honey);
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.event-hero__meta-item dd {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.event-hero__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.event-hero__button {
+  display: inline-flex;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #111;
+  border-radius: 9999px;
+  padding: 0 14px;
+  color: #111;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.event-hero__button--primary {
+  border-color: var(--sdc-honey);
+  background: var(--sdc-honey);
+}
+
+.event-hero__media {
+  min-height: 420px;
+  background-position: center 52%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+  .event-hero { grid-template-columns: 1fr; }
+  .event-hero__copy { min-height: 420px; padding: 48px 32px; }
+  .event-hero__media { min-height: 360px; }
+}
+
+@media (max-width: 540px) {
+  .event-hero__copy { min-height: auto; padding: 42px 24px; }
+  .event-hero__title { font-size: 44px; }
+  .event-hero__meta { flex-direction: column; gap: 12px; }
+  .event-hero__actions { flex-wrap: wrap; }
+}

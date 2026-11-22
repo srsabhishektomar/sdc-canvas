@@ -1,0 +1,8 @@
+name: SDC Canvas Prototype
+type: module
+description: Reusable components for the Winter FancyFaire Canvas prototype.
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:sdc
+  - drupal:canvas

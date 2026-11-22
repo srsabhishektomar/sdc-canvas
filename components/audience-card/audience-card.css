@@ -1,0 +1,63 @@
+@import '../shared.css';
+
+.audience-card {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid #bfc0c2;
+  border-radius: 11px;
+  background: #fff;
+  font-family: var(--sdc-heading);
+}
+
+.audience-card__image {
+  height: 125px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.audience-card__icon {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 7px rgb(0 0 0 / 8%);
+}
+
+.audience-card__icon img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.audience-card__body {
+  min-height: 131px;
+  padding: 28px 16px 12px;
+}
+
+.audience-card__title {
+  margin: 0 0 7px;
+  font-size: 16.5px;
+  line-height: 1.2;
+}
+
+.audience-card__description {
+  min-height: 36px;
+  margin: 0 0 7px;
+  color: var(--sdc-muted);
+  font-size: 12.5px;
+  line-height: 1.42;
+}
+
+.audience-card__link {
+  color: #111;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}

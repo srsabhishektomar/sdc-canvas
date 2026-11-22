@@ -1,0 +1,39 @@
+<section class="sdc-canvas-component event-hero" aria-labelledby="event-title">
+  <div class="event-hero__copy">
+    {% if eyebrow %}<p class="event-hero__eyebrow">{{ eyebrow }}</p>{% endif %}
+    {% if title %}<h1 class="event-hero__title" id="event-title">{{ title|nl2br }}</h1>{% endif %}
+    {% if description %}<p class="event-hero__description">{{ description|nl2br }}</p>{% endif %}
+
+    {% if date_label or location_label %}
+      <dl class="event-hero__meta">
+        {% if date_label %}
+          <div class="event-hero__meta-item">
+            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+            <dd>{{ date_label }}</dd>
+          </div>
+        {% endif %}
+        {% if location_label %}
+          <div class="event-hero__meta-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <dd>{{ location_label|nl2br }}</dd>
+          </div>
+        {% endif %}
+      </dl>
+    {% endif %}
+
+    {% if primary_action_label or secondary_action_label %}
+      <div class="event-hero__actions">
+        {% if secondary_action_label %}
+          <a class="event-hero__button" href="{{ secondary_action_url|default('#') }}">{{ secondary_action_label }}</a>
+        {% endif %}
+        {% if primary_action_label %}
+          <a class="event-hero__button event-hero__button--primary" href="{{ primary_action_url|default('#') }}">{{ primary_action_label }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if media_url %}
+    <div class="event-hero__media" role="img" aria-label="{{ title|striptags }}" style="background-image: url('{{ media_url }}')"></div>
+  {% endif %}
+</section>

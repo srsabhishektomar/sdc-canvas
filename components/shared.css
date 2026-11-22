@@ -1,0 +1,14 @@
+:root {
+  --sdc-text: #000;
+  --sdc-muted: #545456;
+  --sdc-surface: #fff;
+  --sdc-honey: #ffad00;
+  --sdc-border: #a7a9ac;
+  --sdc-display: ivypresto-display, Georgia, serif;
+  --sdc-heading: poppins, Arial, sans-serif;
+}
+
+.sdc-canvas-component,
+.sdc-canvas-component * {
+  box-sizing: border-box;
+}
