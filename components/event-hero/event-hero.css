@@ -3,8 +3,8 @@
 .event-hero {
   display: grid;
   grid-template-columns: 46.4% 53.6%;
-  min-height: 420px;
-  background: #fff;
+  min-height: 375px;
+  background: #fff3e1;
   font-family: var(--sdc-heading);
 }
 
@@ -13,7 +13,7 @@
   min-width: 0;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 63px 32px 38px clamp(48px, 10.7vw, 206px);
+  padding: 56px 32px 34px clamp(48px, 14vw, 206px);
 }
 
 .event-hero__eyebrow {
@@ -30,24 +30,24 @@
   margin: 0;
   max-width: 500px;
   font-family: var(--sdc-display);
-  font-size: clamp(44px, 3.05vw, 58px);
+  font-size: clamp(36px, 2.85vw, 44px);
   font-weight: 700;
   letter-spacing: -1.8px;
-  line-height: 0.98;
+  line-height: 0.9;
 }
 
 .event-hero__description {
-  margin: 14px 0 20px;
+  margin: 14px 0 24px;
   max-width: 430px;
-  font-size: 13.5px;
-  line-height: 1.38;
+  font-size: 12px;
+  line-height: 1.25;
 }
 
 .event-hero__meta {
   display: flex;
   gap: 42px;
   align-items: flex-start;
-  margin: 0 0 22px;
+  margin: 0 0 14px;
 }
 
 .event-hero__meta-item {
@@ -65,9 +65,9 @@
 
 .event-hero__meta-item dd {
   margin: 0;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 1.45;
+  line-height: 1.25;
 }
 
 .event-hero__actions {
@@ -96,7 +96,7 @@
 }
 
 .event-hero__media {
-  min-height: 420px;
+  min-height: 375px;
   background-position: center 52%;
   background-size: cover;
   background-repeat: no-repeat;

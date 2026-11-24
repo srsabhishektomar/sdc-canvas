@@ -12,3 +12,38 @@
 .sdc-canvas-component * {
   box-sizing: border-box;
 }
+
+body.canvas-page {
+  background: #fff;
+}
+
+body.canvas-page .site-header,
+body.canvas-page .social-bar,
+body.canvas-page .region--breadcrumb,
+body.canvas-page #block-olivero-page-title,
+body.canvas-page [role='contentinfo'] {
+  display: none;
+}
+
+body.canvas-page .layout-main {
+  display: block;
+}
+
+body.canvas-page .main-content,
+body.canvas-page .main-content__container {
+  width: 100%;
+}
+
+body.canvas-page .main-content__container {
+  max-width: none;
+  padding: 4px 34px 0;
+}
+
+body.canvas-page #content {
+  display: block;
+}
+
+body.canvas-page #block-olivero-content {
+  width: 100%;
+  margin: 0;
+}

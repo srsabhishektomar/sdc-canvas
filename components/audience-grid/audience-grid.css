@@ -3,10 +3,10 @@
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
+  gap: 16px;
   width: calc(100% - 48px);
-  max-width: 970px;
-  margin: 46px auto 58px;
+  max-width: 864px;
+  margin: 40px auto 58px;
   grid-auto-flow: row;
 }
 

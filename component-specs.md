@@ -12,9 +12,9 @@
 - `location_label`: venue and city, preserving a line break
 - `primary_action_label` / `primary_action_url`
 - `secondary_action_label` / `secondary_action_url`
-- `media_url`: image asset or Drupal media URL
+- `image_url`: hero image selected from the Media Library
 
-**Composition:** Two-column section on desktop, stacked on narrow screens. Text and media occupy independent regions so the editor can update copy or replace the image without changing layout code.
+**Composition:** Full-width, two-column section on desktop, stacked on narrow screens. On Canvas pages, the Olivero header, page title, breadcrumbs, social bar, and footer are hidden so the composition can use the full content width and match the design reference. Text and media occupy independent regions so the editor can update copy or replace the image without changing layout code.
 
 ## Audience Card
 

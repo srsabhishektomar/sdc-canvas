@@ -56,8 +56,7 @@ props:
       title: Secondary action URL
       examples:
         - '#'
-    media_url:
-      type: string
+    image_url:
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
       title: Hero image
-      examples:
-        - /modules/custom/sdc_canvas/assets/images/home-hero-food.png

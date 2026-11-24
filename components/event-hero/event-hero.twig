@@ -33,7 +33,9 @@
     {% endif %}
   </div>
 
-  {% if media_url %}
-    <div class="event-hero__media" role="img" aria-label="{{ title|striptags }}" style="background-image: url('{{ media_url }}')"></div>
+  {% set image_src = image_url.src|default(image_url) %}
+  {% set image_alt = image_url.alt|default(title|striptags) %}
+  {% if image_src %}
+    <div class="event-hero__media" role="img" aria-label="{{ image_alt }}" style="background-image: url('{{ image_src }}')"></div>
   {% endif %}
 </section>

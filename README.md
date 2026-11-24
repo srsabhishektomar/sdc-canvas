@@ -44,7 +44,7 @@ Available props:
 - `primary_action_url`
 - `secondary_action_label`
 - `secondary_action_url`
-- `media_url`
+- `image_url` - image prop; select the hero image from the Media Library
 
 The required `title` prop has a Canvas-compatible first example. Its CSS uses a 46.4/53.6 split desktop layout and stacks below 900px.
 
@@ -89,7 +89,7 @@ The CSS renders 4 desktop columns by default, 2 columns below 900px, and 1 colum
 3. Open `/admin/appearance/component/status` and verify the three SDCs are enabled.
 4. Open Canvas and place Event Hero and Audience Card Grid components.
 5. Add Audience Card components to the grid's `cards` slot.
-6. Configure titles, descriptions, and links in Canvas's component form; choose card images and icons from the Media Library.
+6. Configure titles, descriptions, and links in Canvas's component form; choose hero and card images and card icons from the Media Library.
 
 Canvas 1.13 automatically creates component config entities for eligible SDCs. The three config entity IDs are:
 
