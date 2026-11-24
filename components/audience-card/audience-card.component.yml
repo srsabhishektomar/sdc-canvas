@@ -32,12 +32,16 @@ props:
       examples:
         - '#'
     image_url:
-      type: string
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
       title: Card image
       examples:
-        - /modules/custom/sdc_canvas/assets/images/maker.png
+        - src: /modules/custom/sdc_canvas/assets/images/maker.png
+          alt: ''
     icon_url:
-      type: string
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
       title: Card icon
       examples:
-        - /modules/custom/sdc_canvas/assets/icons/icon-maker.png
+        - src: /modules/custom/sdc_canvas/assets/icons/icon-maker.png
+          alt: ''

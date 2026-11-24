@@ -1,9 +1,11 @@
 <article class="sdc-canvas-component audience-card">
-  {% if image_url %}
-    <div class="audience-card__image" style="background-image: url('{{ image_url }}')"></div>
+  {% set image_src = image_url.src|default(image_url) %}
+  {% if image_src %}
+    <div class="audience-card__image" style="background-image: url('{{ image_src }}')"></div>
   {% endif %}
-  {% if icon_url %}
-    <div class="audience-card__icon"><img src="{{ icon_url }}" alt=""></div>
+  {% set icon_src = icon_url.src|default(icon_url) %}
+  {% if icon_src %}
+    <div class="audience-card__icon"><img src="{{ icon_src }}" alt=""></div>
   {% endif %}
   <div class="audience-card__body">
     <h2 class="audience-card__title">{{ title }}</h2>

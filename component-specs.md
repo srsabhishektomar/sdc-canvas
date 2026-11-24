@@ -24,9 +24,9 @@
 - `title`
 - `description`
 - `link_label`
-- `link_url`
-- `image_url`
-- `icon_url`
+- `link_url`: card destination
+- `image_url`: image selected from the Media Library
+- `icon_url`: image selected from the Media Library
 
 **Composition:** Image, overlapping circular icon, and text panel. The card is designed as an isolated reusable unit rather than a hard-coded page section.
 
