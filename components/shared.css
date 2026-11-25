@@ -21,7 +21,8 @@ body.canvas-page .site-header,
 body.canvas-page .social-bar,
 body.canvas-page .region--breadcrumb,
 body.canvas-page #block-olivero-page-title,
-body.canvas-page [role='contentinfo'] {
+body.canvas-page [role='contentinfo'],
+body.canvas-page footer {
   display: none;
 }
 
@@ -36,11 +37,12 @@ body.canvas-page .main-content__container {
 
 body.canvas-page .main-content__container {
   max-width: none;
-  padding: 4px 34px 0;
+  padding: 0 12px;
 }
 
 body.canvas-page #content {
   display: block;
+  margin-bottom: 24px;
 }
 
 body.canvas-page #block-olivero-content {

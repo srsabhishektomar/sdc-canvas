@@ -3,7 +3,7 @@
 .event-hero {
   display: grid;
   grid-template-columns: 46.4% 53.6%;
-  min-height: 375px;
+  min-height: 415px;
   background: #fff3e1;
   font-family: var(--sdc-heading);
 }
@@ -13,7 +13,7 @@
   min-width: 0;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 56px 32px 34px clamp(48px, 14vw, 206px);
+  padding: 56px 32px 34px clamp(48px, 14.8vw, 206px);
 }
 
 .event-hero__eyebrow {
@@ -96,7 +96,7 @@
 }
 
 .event-hero__media {
-  min-height: 375px;
+  min-height: 415px;
   background-position: center 52%;
   background-size: cover;
   background-repeat: no-repeat;
