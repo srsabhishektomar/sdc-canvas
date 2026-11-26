@@ -2,7 +2,7 @@ $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schema
 name: Event Hero
 status: stable
 group: Marketing/Hero
-description: Configurable event hero with copy, metadata, actions, and media.
+description: Configurable event hero with copy, metadata, and media.
 libraryOverrides:
   dependencies:
     - sdc_canvas/global
@@ -36,27 +36,11 @@ props:
       title: Location label
       examples:
         - "Moscone Center\nSan Francisco, CA"
-    primary_action_label:
-      type: string
-      title: Primary action label
-      examples:
-        - Explore the Event
-    primary_action_url:
-      type: string
-      title: Primary action URL
-      examples:
-        - '#'
-    secondary_action_label:
-      type: string
-      title: Secondary action label
-      examples:
-        - Register to Attend
-    secondary_action_url:
-      type: string
-      title: Secondary action URL
-      examples:
-        - '#'
     image_url:
       type: object
       $ref: json-schema-definitions://canvas.module/image
       title: Hero image
+slots:
+  actions:
+    title: Actions
+    description: Add one or more Button components for the hero calls to action.

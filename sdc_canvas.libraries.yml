@@ -11,6 +11,7 @@ global:
     theme:
       components/shared.css: {}
       components/event-hero/event-hero.css: {}
+      components/button/button.css: {}
       components/audience-card/audience-card.css: {}
       components/audience-grid/audience-grid.css: {}
   dependencies:

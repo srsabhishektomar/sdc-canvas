@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Button
+status: stable
+group: General
+description: A reusable call-to-action link with primary and secondary styles.
+libraryOverrides:
+  dependencies:
+    - sdc_canvas/global
+props:
+  type: object
+  required:
+    - label
+  properties:
+    label:
+      type: string
+      title: Button label
+      examples:
+        - Explore the Event
+    url:
+      type: string
+      title: Button URL
+      examples:
+        - '#'
+    type:
+      type: string
+      title: Button type
+      enum:
+        - primary
+        - secondary
+      default: secondary
+      examples:
+        - primary

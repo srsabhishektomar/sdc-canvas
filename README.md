@@ -4,9 +4,10 @@
 
 `SDC Canvas` provides reusable Drupal Single Directory Components for a Winter FancyFaire event page and makes them available to Drupal Canvas.
 
-The module separates presentation into three independently configurable components:
+The module separates presentation into independently configurable components:
 
-- `sdc_canvas:event-hero` - event copy, date/location metadata, calls to action, and a hero image.
+- `sdc_canvas:event-hero` - event copy, date/location metadata, and a hero image.
+- `sdc_canvas:button` - a reusable call-to-action link with primary and secondary styles.
 - `sdc_canvas:audience-card` - one image-and-text audience resource card.
 - `sdc_canvas:audience-grid` - a responsive container with a slot for Audience Card components.
 
@@ -40,13 +41,21 @@ Available props:
 - `description`
 - `date_label`
 - `location_label`
-- `primary_action_label`
-- `primary_action_url`
-- `secondary_action_label`
-- `secondary_action_url`
 - `image_url` - image prop; select the hero image from the Media Library
 
+The `actions` slot accepts multiple nested `sdc_canvas:button` components. They display in a row and wrap onto additional lines when needed.
+
 The required `title` prop has a Canvas-compatible first example. Its CSS uses a 46.4/53.6 split desktop layout and stacks below 900px.
+
+### Button
+
+Machine ID: `sdc_canvas:button`
+
+Props:
+
+- `label` - required button text
+- `url` - destination URL
+- `type` - `primary` or `secondary`; defaults to `secondary`
 
 ### Audience Card
 
@@ -94,6 +103,7 @@ The CSS renders 4 desktop columns by default, 2 columns below 900px, and 1 colum
 Canvas 1.13 automatically creates component config entities for eligible SDCs. The three config entity IDs are:
 
 - `canvas.component.sdc.sdc_canvas.event-hero`
+- `canvas.component.sdc.sdc_canvas.button`
 - `canvas.component.sdc.sdc_canvas.audience-card`
 - `canvas.component.sdc.sdc_canvas.audience-grid`
 

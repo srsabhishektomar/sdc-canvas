@@ -37,7 +37,7 @@ body.canvas-page .main-content__container {
 
 body.canvas-page .main-content__container {
   max-width: none;
-  padding: 0 12px;
+  padding: 0 ;
 }
 
 body.canvas-page #content {

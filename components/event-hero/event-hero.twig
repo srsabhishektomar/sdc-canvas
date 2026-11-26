@@ -21,14 +21,9 @@
       </dl>
     {% endif %}
 
-    {% if primary_action_label or secondary_action_label %}
+    {% if actions %}
       <div class="event-hero__actions">
-        {% if secondary_action_label %}
-          <a class="event-hero__button" href="{{ secondary_action_url|default('#') }}">{{ secondary_action_label }}</a>
-        {% endif %}
-        {% if primary_action_label %}
-          <a class="event-hero__button event-hero__button--primary" href="{{ primary_action_url|default('#') }}">{{ primary_action_label }}</a>
-        {% endif %}
+        {{ actions }}
       </div>
     {% endif %}
   </div>

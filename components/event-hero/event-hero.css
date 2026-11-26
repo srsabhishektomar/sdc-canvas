@@ -72,27 +72,8 @@
 
 .event-hero__actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-}
-
-.event-hero__button {
-  display: inline-flex;
-  height: 34px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #111;
-  border-radius: 9999px;
-  padding: 0 14px;
-  color: #111;
-  font-size: 11.5px;
-  font-weight: 700;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.event-hero__button--primary {
-  border-color: var(--sdc-honey);
-  background: var(--sdc-honey);
 }
 
 .event-hero__media {
@@ -112,5 +93,4 @@
   .event-hero__copy { min-height: auto; padding: 42px 24px; }
   .event-hero__title { font-size: 44px; }
   .event-hero__meta { flex-direction: column; gap: 12px; }
-  .event-hero__actions { flex-wrap: wrap; }
 }
